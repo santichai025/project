@@ -1,0 +1,102 @@
+{% extends 'hosbase/base.html' %}
+
+
+{% block content %}
+ 
+        <!-- row -->
+        <div class="row tm-content-row">
+          <div class="tm-block-col tm-col-avatar">
+            <div class="tm-bg-primary-dark tm-block tm-block-avatar">
+              <h2 class="tm-block-title">รูปเจ้าหน้าที่&nbsp;</h2>
+              <div class="tm-avatar-container">
+                <img
+                  src="img/avatar.png"
+                  alt="Avatar"
+                  class="tm-avatar img-fluid mb-4"
+                />
+                <a href="#" class="tm-avatar-delete-link">
+                  <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                </a>
+              </div>
+              <button class="btn btn-primary btn-block text-uppercase">
+                อัพโหลดรูปภาพ
+              </button>
+            </div>
+          </div>
+          <br><br>
+          <div class="tm-block-col tm-col-account-settings">
+            <div class="tm-bg-primary-dark tm-block tm-block-settings">
+              <h2 class="tm-block-title">ประวัติส่วนตัว</h2>
+              <form action="" class="tm-signup-form row">
+                <div class="form-group col-lg-6">
+                  <label for="name">ชื่อ&nbsp;</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="form-control validate"
+                  />
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="Lname">นามสกุล&nbsp;</label>
+                  <input
+                    id="Lname"
+                    name="Lname"
+                    type="Lname"
+                    class="form-control validate"
+                  />
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="id">รหัสประจำตัว&nbsp;</label>
+                  <input
+                    id="id"
+                    name="id"
+                    type="id"
+                    class="form-control validate"
+                  />
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="email">&nbsp;email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="form-control validate"
+                  />
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="phone">เบอร์โทรศัพท์&nbsp;</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    class="form-control validate"
+                  />
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="id">ที่อยู่&nbsp;</label>
+                  <input
+                    id="address"
+                    name="address"
+                    type="address"
+                    class="form-control validate"
+                  />
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block text-uppercase"
+                  >
+                  แก้ไขข้อมูลผู้ใช้นี้&nbsp; </button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block text-uppercase"
+                  > ลบข้อมูลผูใช้นี้&nbsp; </button>
+                </div>
+              </form>
+</div>
+          </div>
+        </div>
+      </div>
+
+{% endblock content %}
